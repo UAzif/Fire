@@ -12,7 +12,7 @@ public class Fire {
     public Fire(Scene scene) {
         this.scene = scene;
         setDefaultValues();
-  //      getFireImage();
+        getFireImage();
     }
 
     public void setDefaultValues() {
@@ -32,21 +32,21 @@ public class Fire {
     }
 
     public void draw(Graphics2D g2D) {
-        g2D.setColor(Color.WHITE);
-        g2D.fillRect(x, y, 50, 50);
-//        BufferedImage image = null;
-//        int x =  (int) (Math.random() * 3) + 1;
-//        switch (x) {
-//            case 1:
-//                image = f1;
-//                break;
-//            case 2:
-//                image = f2;
-//                break;
-//            case 3:
-//                image = f3;
-//                break;
-//        }
-//        g2D.drawImage(image, x, y, null);
+//        g2D.setColor(Color.WHITE);
+//        g2D.fillRect(x, y, 50, 50);
+        BufferedImage image = null;
+        int x =  (int) (Math.random() * 3) + 1;
+        switch (x) {
+            case 1:
+                image = f1;
+                break;
+            case 2:
+                image = f2;
+                break;
+            case 3:
+                image = f3;
+                break;
+        }
+        g2D.drawImage(image, x, y, null);
     }
 }
