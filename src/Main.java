@@ -4,7 +4,7 @@ public class Main extends JFrame {
     Main(){
       ;
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-      setSize(500,515);
+      setSize(350,615);
       setLocation(200,200);
       Scene sc= new Scene();
       add(sc);

@@ -3,14 +3,12 @@ import java.awt.*;
 
 public class Scene extends JPanel implements Runnable {
     Thread gameThread;
-    int fireX = 100;
-    int fireY = 100;
     int FPS = 60;
     Fire fire = new Fire(this);
 
     Scene() {
         setBackground(Color.DARK_GRAY);
-        setSize(500, 500);
+        setSize(400, 700);
         setVisible(true);
     }
 
@@ -47,9 +45,5 @@ public class Scene extends JPanel implements Runnable {
         super.paintComponent(g);
         Graphics2D g2D = (Graphics2D) g;
         fire.draw(g2D);
-//        g2D.setColor(Color.WHITE);
-//        g2D.fillRect(fireX, fireY, 50, 50);
-
     }
-
 }
